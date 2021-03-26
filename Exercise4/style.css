@@ -1,0 +1,35 @@
+*{
+    outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+ }
+html {
+    width: 100%;
+    height: 100%;
+}
+.header_cont { grid-area: header; }
+.menu_cont { grid-area: menu; }
+.main_cont { grid-area: main; }
+.right_cont { grid-area: right; }
+.footer_cont { grid-area: footer; }
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.15fr;
+    grid-template-areas:
+      'header header header'
+      'menu main right'
+      'menu footer footer';
+    grid-gap: 0.5rem;
+    background-color: #2196F3;
+    padding: 10px;
+}

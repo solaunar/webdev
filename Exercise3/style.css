@@ -220,7 +220,7 @@ textarea:focus{
 }
 
 .contact_f ul a:visited{
-    color: rgb(105, 201, 92);
+    text-decoration:overline;
 }
 
 #albums ul{
@@ -232,7 +232,7 @@ textarea:focus{
 
 .f_link a, #albums a{
     color:inherit;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .f_link a:hover, #albums a:hover{
@@ -240,7 +240,7 @@ textarea:focus{
 }
 
 .f_link a:visited #albums ul a:visited{
-    color:rgb(105, 201, 92);
+    text-decoration:line-through;
 }
 
 p{
