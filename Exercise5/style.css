@@ -97,6 +97,7 @@ img{
     max-width: fit-content;
     height: auto;
     max-height: max-content;
+    object-fit: contain;
 }
 .left_cont, .right_cont{
     display: flex;
@@ -167,6 +168,9 @@ ul{
 }
 .clickable_icon:hover{
     filter: drop-shadow(0px 5px 10px #00ffee);
+}
+.clickable_icon{
+    width: 2%;
 }
 .link{
     text-decoration: none;
