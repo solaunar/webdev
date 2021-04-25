@@ -36,3 +36,22 @@ window.onload = function preTheme() {
         val.textContent = 'EDGY THEME';
     }
 };
+
+var counter = 1;
+function addFields(){
+        // Container <fieldset> where dynamic content will be placed
+        var container = document.getElementById("contact_info");
+        // Append a node with a random text
+        container.appendChild(document.createTextNode("Phone Number " + (counter+1)));
+        // Create an <input> element, set its type and name attributes
+        var input = document.createElement("input");
+        input.type = "tel";
+        input.name = "phone" + counter;
+        input.id = "phone" + counter;
+        input.placeholder = "Extra phone: "+(counter+1);
+        input.pattern = "[0-9]{4}-[0-9][0-9]{10}";
+        container.appendChild(input);
+        counter = counter+1;
+        // Append a line break 
+        container.appendChild(document.createElement("br"));
+};
