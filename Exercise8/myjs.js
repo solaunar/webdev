@@ -55,3 +55,7 @@ function addFields(){
         // Append a line break 
         container.appendChild(document.createElement("br"));
 };
+
+function checkPassword(){
+    
+}
