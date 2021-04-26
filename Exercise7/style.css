@@ -20,6 +20,7 @@
     --color-but-inv-bg: #0e0e0e;
     --color-but-inv-font: #04d9ca;
     --color-link-visited: rgb(54, 54, 54);
+    --inv-amount: 0;
 }
 .theme_dark {
     --color-main: rgba(60, 87, 94, 0.349);
@@ -35,6 +36,7 @@
     --color-but-inv-bg: #ffbcbc;
     --color-but-inv-font: rgb(165, 0, 22);
     --color-link-visited: gray;
+    --inv-amount: 1;
 }
 *{
     margin: 0;
@@ -47,6 +49,7 @@ body{
     color: var(--font-color);
     text-decoration: none;
 }
+p{text-indent: 2.0em;}
 main { 
     grid-area: main; 
     display: flex;
@@ -136,6 +139,9 @@ img{
     height: auto;
     max-height: max-content;
     object-fit: contain;
+}
+#bunny{
+    filter: invert(var(--inv-amount));
 }
 .left_cont, .right_cont{
     display: flex;

@@ -18,6 +18,7 @@ body{
     color: white;
     text-decoration: none;
 }
+p{text-indent: 2.0em;}
 main { 
     grid-area: main; 
     display: flex;
@@ -99,6 +100,9 @@ img{
     max-height: max-content;
     object-fit: contain;
 }
+#bunny{
+    filter: invert(1);
+}
 .left_cont, .right_cont{
     display: flex;
     flex-direction: column;
@@ -170,7 +174,7 @@ ul{
     filter: drop-shadow(0px 5px 10px #00ffee);
 }
 .clickable_icon{
-    width: 2%;
+    width: 5%;
 }
 .link{
     text-decoration: none;

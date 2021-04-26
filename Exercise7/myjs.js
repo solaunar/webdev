@@ -13,11 +13,11 @@ function toggleTheme() {
     var val = document.getElementById("themebutton");
     if (localStorage.getItem('theme') === 'theme_dark') {
         setTheme('theme_light');
-        img.src = 'logoinv.png';
+        img.src = '../mediaEx5-8/logoinv.png';
         val.textContent = 'EDGY THEME';
     } else {
         setTheme('theme_dark');
-        img.src = 'logo.png';
+        img.src = '../mediaEx5-8/logo.png';
         val.textContent = 'SOFT THEME';
     }
 }
@@ -27,11 +27,11 @@ window.onload = function preTheme() {
     var img = document.getElementById("logo");
     var val = document.getElementById("themebutton");
     if (localStorage.getItem('theme') === 'theme_dark') {
-        img.src = 'logo.png';
+        img.src = '../mediaEx5-8/logo.png';
         setTheme('theme_dark');
         val.textContent = 'SOFT THEME';
     } else {
-        img.src = 'logoinv.png';
+        img.src = '../mediaEx5-8/logoinv.png';
         setTheme('theme_light');
         val.textContent = 'EDGY THEME';
     }
