@@ -1,0 +1,249 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    text-align: center;
+}
+
+section{
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: invert(80%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: invert(100%);
+    margin: 3%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    color: white;
+}
+
+h1{
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 1%;
+    color: #00960c;
+    filter: drop-shadow(0px 10px 20px #ffffff);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    background-color: black;
+    filter: drop-shadow(2px 0px 10px #00960c);
+    color: white;
+    padding: 1%;
+}
+
+h3{
+    background-color: #51ff2e;
+    color: black;
+    filter: drop-shadow(5px -2px 15px #000000e5);
+    padding: 1%;
+}
+
+nav {
+    filter: blur(3px);
+    filter: opacity(80%);
+    overflow: hidden;
+    background-color: black;
+    filter: drop-shadow(0px 10px 10px #039c0f);
+    position: relative;
+    top: 0;
+    padding: 16px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+nav a {
+    float: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #74e27a;
+    color: black;
+}
+
+nav a.active {
+    background-color: #51ff2e;
+    color: black;
+}
+
+main{
+    /*background-color: #036042;*/
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 2% 4%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#me{
+    filter: drop-shadow(3px -7px 20px #039c0f);
+}
+
+table.container img{
+    filter: drop-shadow(3px -7px 20px #039c0f);
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+table.container figcaption{
+    background-color:  black;
+    color:white;
+    padding: 1.5%;
+    margin-top: -1%;
+}
+
+table.container{
+    margin: 8px 0;
+    width: 100%;
+}
+
+table.container td{
+    width:30%;
+}
+
+#emailform{
+    margin: 8px 0;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 29, 7);
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    resize: none;
+    margin: 8px 0;
+}
+
+input:hover{
+    background-color: #071f09;
+    color: white;
+}
+
+input:focus{
+    background-color: #141614;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 29, 7);
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    resize: none;
+    margin: 8px 0;
+}
+
+textarea:hover{
+    background-color: #071f09;
+    color: white;
+}
+
+textarea:focus{
+    background-color: #141614;
+    color: white;
+}
+
+#commit{
+    width: 40%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#commit:hover {
+    background-color: #00960c;
+    color:black;
+}
+
+.contact_f{
+    padding:10px 0;
+    color:#f0f9ff;
+    backdrop-filter:blur(15px);
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-top: 0;
+    background-color: rgba(24, 22, 22, 0.479);
+    border-radius: 20px;
+}
+
+.contact_f ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:16px;
+    margin-bottom:0;
+}
+  
+.contact_f ul a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.contact_f ul a:hover {
+    color: #00960c;
+}
+
+.contact_f ul a:visited{
+    text-decoration:overline;
+}
+
+#albums ul{
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:16px;
+}
+
+.f_link a, #albums a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.f_link a:hover, #albums a:hover{
+    color: #00960c;
+}
+
+.f_link a:visited #albums ul a:visited{
+    text-decoration:line-through;
+}
+
+p{
+    padding: 1%;
+    text-align: left;
+}
