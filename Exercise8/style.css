@@ -335,6 +335,12 @@ input[type=range] {
     width: 100%;
     padding: 0% 2.7%;
 }
+.req:invalid{
+    box-shadow: 3px 3px 5px red;
+}
+.req:valid{
+    box-shadow: 3px 3px 5px greenyellow;
+}
 #hide{
     display: none;
 }

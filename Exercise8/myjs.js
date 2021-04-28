@@ -91,10 +91,3 @@ function hiddenGreetingOn(){
 function hiddenGreetingOff() {
     document.getElementById("overlayGreeting").style.display = "none";
 }
-
-//function to clear the form and get back at the top of the page
-//when cancel button is clicked
-function cancelSubmit(){
-    document.getElementById('registration-form').reset();
-    window.scrollTo(0, 0);
-}

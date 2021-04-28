@@ -36,11 +36,14 @@
                 <h1>
                     Sign up today...
                 </h1>
-                <p class="article_info">
+                <h2 class="article_info">
                     ...and get access to our premium content!
-                </p>
-                <p>
+                </h2>
+                <h3>
                     Fields with * cannot be left blank.
+                </h3>
+                <p>
+                    [Red marked fields should be properly filled, they will turn green when the input is correct.]
                 </p>
             </header>
             <form id="registration-form" autocomplete="on">
@@ -49,17 +52,17 @@
                     <div class="col" id="names">
                         <span class="pair">
                             <label for="name">Name*</label>
-                            <input type="text" id="name" name="name" placeholder="Name, pex John" required>
+                            <input type="text" id="name" name="name" placeholder="Name, pex John" class="req" pattern="[A-Za-z]{2,}" required>
                         </span>
                         <span class="pair">
                             <label for="lastname">Last name*</label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Last name, pex Foo" required>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last name, pex Foo" class="req" pattern="[A-Za-z]{2,}" required>
                         </span>
                     </div>
                     <div class="col" id="bdayloc">
                         <span class="pair">
                             <label for="birthday">Birthday*</label>
-                            <input type="date" id="birthday" name="birthday" required>
+                            <input type="date" id="birthday" name="birthday" class="req" required>
                         </span>
                         <label for="country">Country</label>
                         <select id="country" name="country">
@@ -318,7 +321,7 @@
                         <span class="pair">
                             <label for="email">E-mail*</label>
                             <input type="email" id="email" name="email"
-                                placeholder="E-mail address, pex example@gmail.com" required>
+                                placeholder="E-mail address, pex example@gmail.com" class="req" required>
                         </span>
                     </div>
                     <div class="col">
@@ -326,7 +329,7 @@
                             <label for="phone">Phone Number*</label>
                             <input type="tel" id="phone" name="phone"
                                 placeholder="Phone Nummber with code, pex 0030-0123456789"
-                                pattern="[0-9]{4}-[0-9][0-9]{10}" required>
+                                pattern="[0-9]{4}-[0-9][0-9]{10}" class="req" required>
                         </span>
                         <span class="pair">
                             <label for="phone2">Secondary Phone Number</label>
@@ -371,7 +374,7 @@
                     <div class="col">
                         <span class="pair">
                             <label for="username">Username*</label>
-                            <input type="text" id="username" name="username" placeholder="Username, pex peepee"
+                            <input type="text" id="username" name="username" placeholder="Username, pex peepee" class="req"
                                 required>
                         </span>
                     </div>
@@ -382,7 +385,7 @@
                                 <p>Your password must have at least one lowercase letter, one uppercase letter, one
                                     number and be at least 5 characters long.</p>
                             </details>
-                            <input type="password" id="password" name="password" placeholder="Password, pex pooPOO28"
+                            <input type="password" id="password" name="password" placeholder="Password, pex pooPOO28" class="req"
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" autocomplete="off" required>
                         </div>
                         <div class="pair">
@@ -391,8 +394,8 @@
                                 <p>Please match the password you typed in previously.</p>
                             </details>
                             <input type="password" id="password_conf" name="password_conf"
-                                placeholder="Password Conf, pex pooPOO28" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
-                                required autocomplete="off">
+                                placeholder="Password Conf, pex pooPOO28" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" class="req"
+                                autocomplete="off" required>
                         </div>
                     </div>
                 </fieldset>
@@ -692,6 +695,7 @@
         </article>
         <p id="bottom">Ana Lleshi © 2021</p>
     </footer>
+    <script src="myformjs.js"></script>
 </body>
 
 </html>
