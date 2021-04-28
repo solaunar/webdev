@@ -39,6 +39,9 @@
                 <p class="article_info">
                     ...and get access to our premium content!
                 </p>
+                <p>
+                    Fields with * cannot be left blank.
+                </p>
             </header>
             <form id="registration-form" autocomplete="on">
                 <fieldset id="personal" class="form_section">
@@ -58,7 +61,7 @@
                             <label for="birthday">Birthday*</label>
                             <input type="date" id="birthday" name="birthday" required>
                         </span>
-                        <label for="country">Country*</label>
+                        <label for="country">Country</label>
                         <select id="country" name="country">
                             <option value="Afganistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -629,7 +632,7 @@
                 <button form="registration-form" type="submit" class="button" id="signup">
                     Submit!
                 </button>
-                <button class="button" id="cancel">
+                <button class="button" id="cancel" onclick="cancelSubmit()">
                     Cancel.
                 </button>
             </section>
