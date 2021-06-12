@@ -21,12 +21,10 @@ Front end only website project for the course of Technologies and Programming of
 ## Usage
 1. Clone the project.
 2. Open the main index.html file with any browser (preferably Opera).
-3. You're ready to go!
+3. You're all set!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
