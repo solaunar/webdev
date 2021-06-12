@@ -18,14 +18,14 @@ function toggleTheme() {
         //setting the theme to light
         setTheme('theme_light');
         //changing our logo image with the light version of it
-        img.src = '../mediaEx5-8/logoinv.png';
+        img.src = '../mediaEx4-8/logoinv.png';
         //changing the button value to indicate the other theme
         //(the initial one, the next one to show up when changing)
         val.textContent = 'EDGY THEME';
     } else {
         //similar actions for when the initial theme is light
         setTheme('theme_dark');
-        img.src = '../mediaEx5-8/logo.png';
+        img.src = '../mediaEx4-8/logo.png';
         val.textContent = 'SOFT THEME';
     }
 }
@@ -37,11 +37,11 @@ window.onload = function preTheme() {
     //if the last theme used was dark theme then change the values
     //accordingly, as in the toggle theme function
     if (localStorage.getItem('theme') === 'theme_dark') {
-        img.src = '../mediaEx5-8/logo.png';
+        img.src = '../mediaEx4-8/logo.png';
         setTheme('theme_dark');
         val.textContent = 'SOFT THEME';
     } else {
-        img.src = '../mediaEx5-8/logoinv.png';
+        img.src = '../mediaEx4-8/logoinv.png';
         setTheme('theme_light');
         val.textContent = 'EDGY THEME';
     }
